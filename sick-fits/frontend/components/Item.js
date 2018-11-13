@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Title from './styles/Title';
-import ItenStyles from './styles/ItemStyles';
+import ItemStyles from './styles/ItemStyles';
 import PriceTag from './styles/PriceTag';
 import formatMoney from '../lib/formatMoney';
 
@@ -17,7 +17,7 @@ class Item extends Component {
   render() {
     const { item } = this.props;
     return (
-      <ItenStyles>
+      <ItemStyles>
         {item.image && <img src={item.image} alt={item.title} />}
         <Title>
           <Link href={{
@@ -40,7 +40,7 @@ class Item extends Component {
           <button>Delete</button>
         </div>
 
-      </ItenStyles>
+      </ItemStyles>
     );
   }
 }
