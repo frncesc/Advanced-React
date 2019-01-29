@@ -103,6 +103,7 @@ const Mutations = {
     const user = await ctx.db.query.user({ where: { email: args.email } });
     if (!user)
       throw new Error(`No such user found for email ${args.email}`);
+
     // 2. Set a reset token and expiry on that user
     const resetToken = (await randomBytesPromise(20)).toString('hex');
     const resetTokenExpiry = Date.now() + 3600000; // 1 hour from now
@@ -110,7 +111,7 @@ const Mutations = {
       where: { email: args.email },
       data: { resetToken, resetTokenExpiry },
     });
-    console.log(res);
+
     // 3. Email them that reset token
 
     return { message: 'Thanks!' }
