@@ -1,0 +1,215 @@
+{
+  "data" : {
+    "items" : [ {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1550739912/sickfits/eoqmzywlmyosnoa6hldv.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1550739912/sickfits/eoqmzywlmyosnoa6hldv.jpg",
+      "description" : "Un rellotge molt espavilat!",
+      "price" : 10000,
+      "id" : "cjseeib709i8k0b64kcqrom8k",
+      "title" : "Rellotge intel·ligent",
+      "user" : {
+        "id" : "cjr3vp7nclg470950924gyl14"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1542564606/sickfits/qeonewfx0ct5nun0xp6r.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1542564606/sickfits/qeonewfx0ct5nun0xp6r.jpg",
+      "description" : "Per a flipar en colors!",
+      "price" : 5000,
+      "id" : "cjseg8u2l0cry0b845gzivro1",
+      "title" : "Fantàstiques ulleres 3D",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1542965766/sickfits/lkhpf9njipjux8yrbe3t.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1542965766/sickfits/lkhpf9njipjux8yrbe3t.jpg",
+      "description" : "Caram, quines bambes!",
+      "price" : 109876,
+      "id" : "cjsegffds0f4r0b84pw0zpmkx",
+      "title" : "Bambes guais!",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547286794/sickfits/toru8himzxixybx6x2gf.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547286794/sickfits/toru8himzxixybx6x2gf.jpg",
+      "description" : "Fantàstic abric per a l'hivern",
+      "price" : 300,
+      "id" : "cjsegftxl0fau0b840o7jihqw",
+      "title" : "Abric blau",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547286852/sickfits/ivb80ih77anaphvpd03j.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547286852/sickfits/ivb80ih77anaphvpd03j.jpg",
+      "description" : "Abriga molt!",
+      "price" : 100,
+      "id" : "cjsegg5ce0fg70b84dw8cbiz0",
+      "title" : "Jaqueta bomber",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547286876/sickfits/tl0btrfmjaisu0m937bj.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547286876/sickfits/tl0btrfmjaisu0m937bj.jpg",
+      "description" : "Per anar al pol!",
+      "price" : 200,
+      "id" : "cjseggkaa0flg0b845s958zxk",
+      "title" : "Anorak",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547286903/sickfits/wbpr8mvbnp9e0isvm3ny.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547286903/sickfits/wbpr8mvbnp9e0isvm3ny.jpg",
+      "description" : "Una americana molt elegant",
+      "price" : 500,
+      "id" : "cjseggxfn0igl0b73zpnwd1up",
+      "title" : "Americana blava",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547286931/sickfits/foe7tkqio2jmlzdssgoc.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547286931/sickfits/foe7tkqio2jmlzdssgoc.jpg",
+      "description" : "Combina amb gairebé tot!",
+      "price" : 500,
+      "id" : "cjseghjwb0is90b730s9183e0",
+      "title" : "Americana gris",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547286963/sickfits/jyarthyowiwcavdingwf.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547286963/sickfits/jyarthyowiwcavdingwf.jpg",
+      "description" : "Elegància suprema!",
+      "price" : 500,
+      "id" : "cjseghx5l0iw00b73vk03ex96",
+      "title" : "Americana de vestir",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547286992/sickfits/fgf4cmc6ni0pei0wx7t0.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547286992/sickfits/fgf4cmc6ni0pei0wx7t0.jpg",
+      "description" : "Per anar fresquet a l'estiu",
+      "price" : 20,
+      "id" : "cjsegi82s0j070b73yjrdj6i0",
+      "title" : "Camisa màniga curta",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287022/sickfits/sdviy3yg8heity4z0owp.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287022/sickfits/sdviy3yg8heity4z0owp.jpg",
+      "description" : "Una camisa molt elegant!",
+      "price" : 30,
+      "id" : "cjsegijg90j4n0b73tdju6mnq",
+      "title" : "Camisa de ratlles",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287049/sickfits/xy3nhziawcyaegiurnqg.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287049/sickfits/xy3nhziawcyaegiurnqg.jpg",
+      "description" : "Per anar de festa!",
+      "price" : 100,
+      "id" : "cjsegivcn0j700b73k25052fn",
+      "title" : "Camisa estampada",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287083/sickfits/l43xeuqv7czremtf9t6k.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287083/sickfits/l43xeuqv7czremtf9t6k.jpg",
+      "description" : "Abriga molt!",
+      "price" : 30,
+      "id" : "cjsegjaf40jdp0b73c7156hbp",
+      "title" : "Jersei fosc",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287114/sickfits/fys7jjyonqcogetgdcb2.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287114/sickfits/fys7jjyonqcogetgdcb2.jpg",
+      "description" : "De llana pura!",
+      "price" : 100,
+      "id" : "cjsegjn390gp70b84fkq0jd7x",
+      "title" : "Jaqueta amb botons",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287145/sickfits/mjz0qinlh5bhspfycxmq.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287145/sickfits/mjz0qinlh5bhspfycxmq.jpg",
+      "description" : "Molt còmode i pràctic",
+      "price" : 40,
+      "id" : "cjsegjwqo0jo00b7378y8wgq2",
+      "title" : "Polo",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287181/sickfits/bjmfecpkwyftp05eulw8.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287181/sickfits/bjmfecpkwyftp05eulw8.jpg",
+      "description" : "Els autèntics texans!",
+      "price" : 100,
+      "id" : "cjsegk7jr0jt10b7317ft57zl",
+      "title" : "Texans",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287206/sickfits/izsvfi95pqayuenzflbw.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287206/sickfits/izsvfi95pqayuenzflbw.jpg",
+      "description" : "Per anar ben vestit!",
+      "price" : 30,
+      "id" : "cjsegknsl0h210b843cbxjlw5",
+      "title" : "Pantaló esport",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287238/sickfits/apzmsw4vvzqi117j5pbs.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287238/sickfits/apzmsw4vvzqi117j5pbs.jpg",
+      "description" : "Forts i resistents!",
+      "price" : 50,
+      "id" : "cjsegl2000k4a0b73eeowj3in",
+      "title" : "Texans foscs",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287266/sickfits/fujcprzxoe8ipgdocyqs.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287266/sickfits/fujcprzxoe8ipgdocyqs.jpg",
+      "description" : "Per anar a l'oficina fet un senyor!",
+      "price" : 1000,
+      "id" : "cjsegld4d0hdq0b84q81zy6yh",
+      "title" : "Trajo de feina",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287302/sickfits/y8a5kncheb4iuu7wddvb.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287302/sickfits/y8a5kncheb4iuu7wddvb.jpg",
+      "description" : "Sembla que vagi estret, però és la moda!",
+      "price" : 800,
+      "id" : "cjseglo9s0kem0b73clti1qpa",
+      "title" : "Trajo curtet",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    }, {
+      "largeImage" : "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1547287338/sickfits/tqekfcgntvk6eqswsohv.jpg",
+      "image" : "https://res.cloudinary.com/francesc/image/upload/v1547287338/sickfits/tqekfcgntvk6eqswsohv.jpg",
+      "description" : "Per a esdeveniments especials!",
+      "price" : 1000,
+      "id" : "cjsegm6xg0hmw0b844wfl0kpf",
+      "title" : "Trajo súper elegant!",
+      "user" : {
+        "id" : "cjqtvdxt0gg5y09505g2funh0"
+      }
+    } ]
+  }
+}

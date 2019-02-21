@@ -22,7 +22,6 @@ class Reset extends Component {
     resetToken: PropTypes.string.isRequired,
   }
 
-
   state = {
     password: '',
     confirmPassword: '',

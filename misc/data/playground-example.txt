@@ -1,0 +1,28 @@
+
+Playground: https://eu1.prisma.sh/francesc-busquets-f7e37c/skfts/dev
+
+
+mutation createItem($item: ItemCreateInput!) {
+  createItem(data: $item) {
+    id
+    title
+  }
+}
+
+
+Query variables:
+{
+  "item": {
+    "title": "Fantàstiques ulleres 3D",
+    "description": "Per a flipar en colors!",
+    "image": "https://res.cloudinary.com/francesc/image/upload/v1542564606/sickfits/qeonewfx0ct5nun0xp6r.jpg",
+    "largeImage": "https://res.cloudinary.com/francesc/image/upload/c_scale,q_auto,w_1000/v1542564606/sickfits/qeonewfx0ct5nun0xp6r.jpg",
+    "price": 5000,
+    "user": {
+      "connect": {
+        "id": "cjqtvdxt0gg5y09505g2funh0"
+      }      
+    }    
+  }
+}
+
