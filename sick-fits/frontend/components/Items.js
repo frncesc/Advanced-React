@@ -35,7 +35,7 @@ class Items extends Component {
   render() {
     return (
       <Center>
-        <Pagination page={this.props.page}></Pagination>
+        <Pagination page={this.props.page || 1}></Pagination>
         <Query
           query={ALL_ITEMS_QUERY}
           //fetchPolicy="network-only"
