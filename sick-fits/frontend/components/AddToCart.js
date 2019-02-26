@@ -13,6 +13,7 @@ const ADD_TO_CART_MUTATION = gql`
 `;
 
 class AddToCart extends React.Component {
+
   render() {
     const { id } = this.props;
     return <Mutation
