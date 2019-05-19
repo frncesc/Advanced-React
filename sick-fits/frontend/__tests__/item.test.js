@@ -1,16 +1,28 @@
 import ItemComponent from '../components/Item';
 import { shallow } from 'enzyme';
+import toJSON from 'enzyme-to-json';
 
 const fakeItem = {
   id: 'ABC123',
   title: 'A Cool Item',
-  price: 5000,
+  price: 4000,
   description: 'This item is really cool!',
   image: 'dog.jpg',
   largeImage: 'largedog.jpg',
 };
 
 describe('<Item/>', () => {
+
+  // Snapshot testing
+  // Press "u" on errors to reset a failing snapshot
+  it('renders and matches the snapshot', () => {
+    const wrapper = shallow(<ItemComponent item={fakeItem} />);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
+
+  /**
+   * Shallow testing
+   * 
   const wrapper = shallow(<ItemComponent item={fakeItem} />);
   it('renders image properly', () => {
     const img = wrapper.find('img');
@@ -30,5 +42,6 @@ describe('<Item/>', () => {
     expect(buttonList.find('AddToCart')).toHaveLength(1);
     expect(buttonList.find('DeleteItem')).toHaveLength(1);
   });
+  */
 
 });
