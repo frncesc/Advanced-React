@@ -9,7 +9,7 @@ import CartCount from './CartCount';
 const Nav = () => (
   <User>
     {({ data: { me } }) => (
-      <NavStyles>
+      <NavStyles data-test="nav">
         <Link href="/items">
           <a>Shop</a>
         </Link>
@@ -28,8 +28,8 @@ const Nav = () => (
             <Mutation mutation={TOGGLE_CART_MUTATION}>
               {toggleCart => (
                 <button onClick={toggleCart}>
-                    My cart
-                    <CartCount count={me.cart.reduce((t, it) => t + it.quantity, 0)}/>
+                  My cart
+                    <CartCount count={me.cart.reduce((t, it) => t + it.quantity, 0)} />
                 </button>
               )}
             </Mutation>
