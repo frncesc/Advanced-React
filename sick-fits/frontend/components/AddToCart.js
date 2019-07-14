@@ -22,6 +22,8 @@ class AddToCart extends React.Component {
         id,
       }}
       refetchQueries={[{ query: CURRENT_USER_QUERY }]}
+      // Definir una funció "update" si es vol mantenir l'usuari
+      // update={this.update}
     >
       {(addToCart, { loading }) => (
         <button disabled={loading} onClick={addToCart}>Add{loading && 'ing'} To cart 🛒</button>
@@ -29,6 +31,7 @@ class AddToCart extends React.Component {
     </Mutation>;
   }
 
-}
+};
 
 export default AddToCart;
+export { ADD_TO_CART_MUTATION };
