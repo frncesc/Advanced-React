@@ -30,9 +30,6 @@ class TakeMyMoney extends React.Component {
 
   onToken = async (res, createOrder) => {
     NProgress.start();
-    
-    console.log('On token called!');
-    console.log(res.id);
 
     // Manually call the mutation once we have the stripe token
     const order = await createOrder({
@@ -52,26 +49,31 @@ class TakeMyMoney extends React.Component {
   render() {
     return (
       <User>
-        {({ data: { me } }) => (
-          <Mutation
-            mutation={CREATE_ORDER_MUTATION}
-            refetchQueries={[{ query: CURRENT_USER_QUERY }]}>
-            {(createOrder) => (
-              <StripeCheckout
-                amount={calcTotalPrice(me.cart)}
-                name="Sick Fits"
-                description={`Order of ${totalItems(me.cart)} items`}
-                image={me.cart.length && me.cart[0].item && me.cart[0].item.image}
-                stripeKey="pk_test_kMFqEPTX7f8p8J2KWP3cc7G000c2nbQLCh"
-                currency="USD"
-                email={me.email}
-                token={(res) => this.onToken(res, createOrder)}
-              >
-                {this.props.children}
-              </StripeCheckout>
-            )}
-          </Mutation>
-        )}
+        {({ data: { me }, loading }) => {
+          if (loading)
+            return null;
+
+          return (
+            <Mutation
+              mutation={CREATE_ORDER_MUTATION}
+              refetchQueries={[{ query: CURRENT_USER_QUERY }]}>
+              {(createOrder) => (
+                <StripeCheckout
+                  amount={calcTotalPrice(me.cart)}
+                  name="Sick Fits"
+                  description={`Order of ${totalItems(me.cart)} items`}
+                  image={me.cart.length && me.cart[0].item && me.cart[0].item.image}
+                  stripeKey="pk_test_kMFqEPTX7f8p8J2KWP3cc7G000c2nbQLCh"
+                  currency="USD"
+                  email={me.email}
+                  token={(res) => this.onToken(res, createOrder)}
+                >
+                  {this.props.children}
+                </StripeCheckout>
+              )}
+            </Mutation>
+          )
+        }}
       </User>
     );
   }
@@ -79,4 +81,5 @@ class TakeMyMoney extends React.Component {
 }
 
 export default TakeMyMoney;
+export { CREATE_ORDER_MUTATION };
 

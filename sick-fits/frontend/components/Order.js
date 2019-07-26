@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Query } from 'react-apollo';
 import { format } from 'date-fns';
@@ -30,7 +30,7 @@ const SINGLE_ORDER_QUERY = gql`
   }
 `;
 
-class Order extends Component {
+class Order extends React.Component {
 
   static propTypes = {
     id: PropTypes.string.isRequired,
@@ -38,58 +38,57 @@ class Order extends Component {
 
   render() {
     return (
-      <Query
-        query={SINGLE_ORDER_QUERY}
-        variables={{ id: this.props.id }}
-      >{(result, error, loading) => {
-        if (error) return <Error error={error} />
-        if (loading) return <p>Loading...</p>
-        const order = result.data.order;
-        return (
-          <OrderStyles>
-            <Head>
-              <title>Sick Fits - Order {order.id}</title>
-            </Head>
-            <p>
-              <span>Order ID:</span>
-              <span>{order.id}</span>
-            </p>
-            <p>
-              <span>Charge:</span>
-              <span>{order.charge}</span>
-            </p>
-            <p>
-              <span>Date:</span>
-              <span>{format(new Date(order.createdAt), 'dd/MM/yyyy hh:mm')}</span>
-            </p>
-            <p>
-              <span>Order Total:</span>
-              <span>{formatMoney(order.total)}</span>
-            </p>
-            <p>
-              <span>Item Count:</span>
-              <span>{order.items.length}</span>
-            </p>
-            <div className="items">
-              {order.items.map(item => (
-                <div className="order-item" key={item.id}>
-                  <img src={item.image} alt={item.title} />
-                  <div className="item-details">
-                    <h2>{item.title}</h2>
-                    <p>Qty: {item.quantity}</p>
-                    <p>Each: {formatMoney(item.price)}</p>
-                    <p>SubTotal: {formatMoney(item.price * item.quantity)}</p>
-                    <p>{item.description}</p>
+      <Query query={SINGLE_ORDER_QUERY} variables={{ id: this.props.id }}>
+        {({ data, error, loading }) => {
+          if (error) return <Error error={error} />
+          if (loading) return <p>Loading...</p>
+          const order = data.order;
+          return (
+            <OrderStyles data-test="order">
+              <Head>
+                <title>Sick Fits - Order {order.id}</title>
+              </Head>
+              <p>
+                <span>Order ID:</span>
+                <span>{order.id}</span>
+              </p>
+              <p>
+                <span>Charge:</span>
+                <span>{order.charge}</span>
+              </p>
+              <p>
+                <span>Date:</span>
+                <span>{format(new Date(order.createdAt), 'dd/MM/yyyy hh:mm')}</span>
+              </p>
+              <p>
+                <span>Order Total:</span>
+                <span>{formatMoney(order.total)}</span>
+              </p>
+              <p>
+                <span>Item Count:</span>
+                <span>{order.items.length}</span>
+              </p>
+              <div className="items">
+                {order.items.map(item => (
+                  <div className="order-item" key={item.id}>
+                    <img src={item.image} alt={item.title} />
+                    <div className="item-details">
+                      <h2>{item.title}</h2>
+                      <p>Qty: {item.quantity}</p>
+                      <p>Each: {formatMoney(item.price)}</p>
+                      <p>SubTotal: {formatMoney(item.price * item.quantity)}</p>
+                      <p>{item.description}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
-          </OrderStyles>
-        )
-      }}
+                ))}
+              </div>
+            </OrderStyles>
+          )
+        }}
       </Query>
     );
   }
 }
 
 export default Order;
+export { SINGLE_ORDER_QUERY };
