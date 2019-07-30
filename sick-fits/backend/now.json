@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "name": "Sick Fits Backend",
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "src/index.js"
+    }
+  ],
+  "env": {
+    "FRONTEND_URL": "http://localhost:7777",
+    "PRISMA_ENDPOINT": "https://eu1.prisma.sh/francesc-busquets-f7e37c/skfts/dev",
+    "PRISMA_SECRET": "oiujkhu900'7kjjlhascvzb13",
+    "APP_SECRET": "jwtsecret123",
+    "STRIPE_SECRET": "sk_test_gnMaAzkyW6IcJjmmxLvWVYuv00WZw1eKsA",
+    "PORT": "4444",
+    "MAIL_HOST": "smtp.mailtrap.io",
+    "MAIL_PORT": "2525",
+    "MAIL_USER": "f0e52abe569d1d",
+    "MAIL_PASS": "0e3a282d324baa"    
+  }
+}
