@@ -3,6 +3,7 @@ import ItemStyles from './styles/ItemStyles';
 import Title from './styles/Title';
 import PriceTag from './styles/PriceTag';
 import formatMoney from '../lib/formatMoney';
+import DeleteProduct from './DeleteProduct';
 
 export default function Product({
   product: { id, name, photo, price, description },
@@ -15,7 +16,17 @@ export default function Product({
       </Title>
       <PriceTag>{formatMoney(price)}</PriceTag>
       <p>{description}</p>
-      {/* TODO: Add buttons to edit and delete items */}
+      <div className="buttonList">
+        <Link
+          href={{
+            pathname: 'update',
+            query: { id },
+          }}
+        >
+          Edit ✏
+        </Link>
+        <DeleteProduct id={id}>Delete 🗑</DeleteProduct>
+      </div>
     </ItemStyles>
   );
 }
